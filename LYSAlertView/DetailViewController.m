@@ -46,7 +46,7 @@
 }
 
 -(void)btnClicked{
-    LYSAlertView *alertView = [[LYSAlertView alloc]initWithTitle:@"温馨提示" content:@"确定拨打客服电话吗？" leftTitle:@"知道了" rightTitle:@"确定"];
+    LYSAlertView *alertView = [[LYSAlertView alloc]initWithTitle:@"温馨提示" content:@"确定拨打客服电话吗？" leftTitle:@"知道了" rightTitle:@""];
     alertView.leftBlock = ^{
         NSLog(@"左按钮被点击");
     };

@@ -16,7 +16,11 @@
 #define contentHoriPadding 10.f
 #define containerW ([UIScreen mainScreen].bounds.size.width * 0.5)
 
-@interface LYSAlertView (){
+#if defined(__IPHONE_10_0) && (__IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_10_0)
+    @interface LYSAlertView ()<CAAnimationDelegate>{
+#else
+    @interface LYSAlertView (){
+#endif
     
     // 标题
     UILabel *_titleLb;
